@@ -4,7 +4,7 @@ import "../styles/sidebar.css";
 export default function Sidebar() {
   return (
     <div className="sidebar">
-      <h2>Jigatech</h2>
+      <h2>Jigatech Inc.</h2>
 
       <nav>
         <Link to="/">Welcome</Link>
