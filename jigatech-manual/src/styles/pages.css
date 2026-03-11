@@ -1,70 +1,77 @@
-/* ─── Page Header ─────────────────────── */
+/* ═══════════════════════════════════════
+   PAGE HEADER
+   ═══════════════════════════════════════ */
 .page-header {
-  margin-bottom: 48px;
+  margin-bottom: 52px;
 }
 
 .page-eyebrow {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .page-chapter-badge {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
-  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 600;
   color: var(--accent);
   background: var(--accent-light);
-  border: 1px solid rgba(200, 75, 15, 0.2);
-  padding: 3px 9px;
-  border-radius: 3px;
-  letter-spacing: 0.5px;
+  border: 1px solid var(--accent-border);
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
 }
 
 .page-eyebrow-line {
   flex: 1;
   height: 1px;
-  background: var(--border);
-  max-width: 60px;
+  background: linear-gradient(90deg, var(--border), transparent);
+  max-width: 80px;
 }
 
 .page-header h1 {
-  font-size: 34px;
-  font-weight: 800;
+  font-size: 36px;
+  font-weight: 900;
   color: var(--text);
-  letter-spacing: -0.8px;
-  margin-bottom: 10px;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  line-height: 1.15;
 }
 
 .page-header p {
   font-size: 15px;
   color: var(--text-muted);
-  max-width: 560px;
-  line-height: 1.6;
+  max-width: 540px;
+  line-height: 1.7;
 }
 
 .page-header-rule {
-  margin-top: 28px;
+  margin-top: 32px;
   border: none;
   border-top: 1px solid var(--border);
 }
 
-/* ─── Sections ────────────────────────── */
+
+/* ═══════════════════════════════════════
+   SECTIONS
+   ═══════════════════════════════════════ */
 .section {
-  margin-bottom: 52px;
+  margin-bottom: 56px;
 }
 
 .section-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 20px;
-  letter-spacing: -0.2px;
+  margin-bottom: 22px;
+  letter-spacing: -0.01em;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
 .section-title::after {
@@ -75,58 +82,82 @@
 }
 
 .subsection {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .subsection-title {
-  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.5px;
   color: var(--text-subtle);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  padding-left: 1px;
 }
 
-/* ─── Placeholders ────────────────────── */
+
+/* ═══════════════════════════════════════
+   PLACEHOLDERS
+   ═══════════════════════════════════════ */
 .placeholder {
   background: var(--placeholder-bg);
-  border: 1px dashed var(--placeholder-border);
-  border-radius: 6px;
+  border: 1.5px dashed var(--placeholder-border);
+  border-radius: var(--radius-sm);
   min-height: 88px;
+  position: relative;
+  transition: background var(--transition), border-color var(--transition);
 }
 
-.placeholder-sm { min-height: 52px; }
-.placeholder-lg { min-height: 136px; }
+.placeholder::after {
+  content: 'Content goes here';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--placeholder-border);
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  white-space: nowrap;
+}
 
+.placeholder-sm { min-height: 56px; }
+.placeholder-lg { min-height: 140px; }
+
+/* ─── Placeholder Table ──────────────── */
 .placeholder-table {
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius);
   overflow: hidden;
+  box-shadow: var(--shadow-xs);
 }
 
 .placeholder-table-header {
-  height: 38px;
+  height: 40px;
   background: var(--placeholder-bg);
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  padding: 0 16px;
-  gap: 16px;
+  padding: 0 18px;
+  gap: 18px;
 }
 
 .placeholder-table-header-cell {
-  height: 10px;
-  border-radius: 3px;
+  height: 8px;
+  border-radius: 4px;
   background: var(--placeholder-border);
 }
 
 .placeholder-table-row {
-  height: 44px;
+  height: 46px;
   display: flex;
   align-items: center;
-  padding: 0 16px;
-  gap: 16px;
+  padding: 0 18px;
+  gap: 18px;
   border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
 }
 
 .placeholder-table-row:last-child {
@@ -138,125 +169,159 @@
 }
 
 .placeholder-table-cell {
-  height: 10px;
-  border-radius: 3px;
+  height: 8px;
+  border-radius: 4px;
   background: var(--placeholder-border);
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
-/* ─── Cards ───────────────────────────── */
+
+/* ═══════════════════════════════════════
+   CARDS
+   ═══════════════════════════════════════ */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 14px;
 }
 
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: var(--radius);
+  padding: 22px;
   box-shadow: var(--shadow-sm);
-  transition: background 0.3s, border-color 0.3s;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 .card-label {
-  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   color: var(--text-subtle);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
 }
 
 .card-label-dot {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: var(--accent);
   flex-shrink: 0;
 }
 
 .card-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 12px;
-  letter-spacing: -0.2px;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
 }
 
-/* ─── Two column ──────────────────────── */
+
+/* ═══════════════════════════════════════
+   TWO COLUMN LAYOUT
+   ═══════════════════════════════════════ */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: 16px;
 }
 
-@media (max-width: 680px) {
-  .two-col { grid-template-columns: 1fr; }
-}
 
-/* ─── Example blocks ──────────────────── */
+/* ═══════════════════════════════════════
+   EXAMPLE BLOCKS
+   ═══════════════════════════════════════ */
 .example-block {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 24px;
+  border-radius: var(--radius);
+  padding: 24px 26px;
   margin-bottom: 16px;
   box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition);
 }
 
 .example-block.positive {
-  border-top: 3px solid #16a34a;
+  border-left: 3px solid var(--positive);
+  background: var(--positive-bg);
+  border-color: var(--positive-border);
+  border-left-color: var(--positive);
 }
 
 .example-block.negative {
-  border-top: 3px solid #dc2626;
+  border-left: 3px solid var(--negative);
+  background: var(--negative-bg);
+  border-color: var(--negative-border);
+  border-left-color: var(--negative);
 }
 
 .example-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10.5px;
-  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
 }
 
 .example-label-indicator {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-.example-label.positive {
-  color: #16a34a;
-}
-.example-label.positive .example-label-indicator {
-  background: #16a34a;
-}
+.example-label.positive { color: var(--positive); }
+.example-label.positive .example-label-indicator { background: var(--positive); }
 
-.example-label.negative {
-  color: #dc2626;
-}
-.example-label.negative .example-label-indicator {
-  background: #dc2626;
-}
+.example-label.negative { color: var(--negative); }
+.example-label.negative .example-label-indicator { background: var(--negative); }
 
-/* ─── Workflow steps ──────────────────── */
+
+/* ═══════════════════════════════════════
+   WORKFLOW STEPS
+   ═══════════════════════════════════════ */
 .steps {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius);
   overflow: hidden;
   background: var(--card-bg);
   box-shadow: var(--shadow-sm);
@@ -266,56 +331,70 @@
   display: flex;
   align-items: stretch;
   border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
 }
 
 .step:last-child {
   border-bottom: none;
 }
 
+.step:hover {
+  background: var(--placeholder-bg);
+}
+
 .step-index {
-  width: 56px;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   background: var(--placeholder-bg);
   border-right: 1px solid var(--border);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
   color: var(--text-subtle);
+  transition: all var(--transition);
+}
+
+.step:hover .step-index {
+  color: var(--accent);
 }
 
 .step-body {
   flex: 1;
-  padding: 16px 20px;
+  padding: 18px 22px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  min-width: 0;
 }
 
 .step-title {
-  font-family: 'Syne', sans-serif;
-  font-size: 13px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.1px;
+  letter-spacing: -0.01em;
 }
 
 .step-placeholder {
   background: var(--placeholder-bg);
-  border: 1px dashed var(--placeholder-border);
+  border: 1.5px dashed var(--placeholder-border);
   border-radius: 5px;
   height: 48px;
 }
 
-/* ─── Welcome banner ──────────────────── */
+
+/* ═══════════════════════════════════════
+   WELCOME BANNER
+   ═══════════════════════════════════════ */
 .welcome-banner {
   background: var(--sidebar-bg);
   border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 10px;
-  padding: 32px 36px;
-  margin-bottom: 48px;
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  margin-bottom: 52px;
   position: relative;
   overflow: hidden;
 }
@@ -324,40 +403,60 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), transparent);
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #f59e42, transparent);
+}
+
+.welcome-banner::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(224,90,26,0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .welcome-banner-tag {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
-  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  font-weight: 600;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 1.4px;
-  margin-bottom: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .welcome-banner h2 {
-  font-family: 'Syne', sans-serif;
-  font-size: 24px;
-  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
   color: #ffffff;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.03em;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .welcome-banner p {
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.4);
   font-size: 14px;
-  max-width: 480px;
-  line-height: 1.6;
+  max-width: 460px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
 }
 
-/* ─── Info row ────────────────────────── */
+
+/* ═══════════════════════════════════════
+   INFO ROW / TAGS
+   ═══════════════════════════════════════ */
 .info-row {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
@@ -368,10 +467,10 @@
   gap: 6px;
   background: var(--placeholder-bg);
   border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 5px 11px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11.5px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
   color: var(--text-muted);
 }
 
@@ -380,4 +479,107 @@
   height: 5px;
   border-radius: 50%;
   background: var(--accent);
+}
+
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — Tablet
+   ═══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .page-header h1 {
+    font-size: 30px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — Mobile
+   ═══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 26px;
+  }
+
+  .page-header p {
+    font-size: 14px;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .welcome-banner {
+    padding: 28px 24px;
+    border-radius: var(--radius);
+  }
+
+  .welcome-banner h2 {
+    font-size: 22px;
+  }
+
+  .example-block {
+    padding: 18px 20px;
+  }
+
+  .step-index {
+    width: 48px;
+    font-size: 10px;
+  }
+
+  .step-body {
+    padding: 14px 16px;
+  }
+
+  .placeholder-table-header,
+  .placeholder-table-row {
+    padding: 0 12px;
+    gap: 12px;
+  }
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — Small phones
+   ═══════════════════════════════════════ */
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 22px;
+  }
+
+  .page-header {
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-banner h2 {
+    font-size: 19px;
+  }
+
+  .welcome-banner p {
+    font-size: 13px;
+  }
 }
