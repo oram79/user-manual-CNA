@@ -3,7 +3,7 @@ export default function ClientExperience() {
     <div>
       <div className="page-header">
         <div className="page-eyebrow">
-          <span className="page-chapter-badge">Chapter 02</span>
+          <span className="page-chapter-badge">Chapter 03</span>
           <div className="page-eyebrow-line" />
         </div>
         <h1>Understanding the Client Experience</h1>
