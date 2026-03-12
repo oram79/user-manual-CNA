@@ -109,19 +109,7 @@
   transition: background var(--transition), border-color var(--transition);
 }
 
-.placeholder::after {
-  content: 'Content goes here';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  color: var(--placeholder-border);
-  letter-spacing: 0.05em;
-  pointer-events: none;
-  white-space: nowrap;
-}
+
 
 .placeholder-sm { min-height: 56px; }
 .placeholder-lg { min-height: 140px; }
@@ -274,18 +262,12 @@
   transition: all var(--transition);
 }
 
-.example-block.positive {
-  border-left: 3px solid var(--positive);
-  background: var(--positive-bg);
-  border-color: var(--positive-border);
-  border-left-color: var(--positive);
-}
-
+.example-block.positive,
 .example-block.negative {
-  border-left: 3px solid var(--negative);
-  background: var(--negative-bg);
-  border-color: var(--negative-border);
-  border-left-color: var(--negative);
+  border-left: 3px solid var(--accent);
+  background: var(--accent-light);
+  border-color: var(--accent-border);
+  border-left-color: var(--accent);
 }
 
 .example-label {
@@ -298,6 +280,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--accent);
 }
 
 .example-label-indicator {
@@ -305,13 +288,8 @@
   height: 6px;
   border-radius: 50%;
   flex-shrink: 0;
+  background: var(--accent);
 }
-
-.example-label.positive { color: var(--positive); }
-.example-label.positive .example-label-indicator { background: var(--positive); }
-
-.example-label.negative { color: var(--negative); }
-.example-label.negative .example-label-indicator { background: var(--negative); }
 
 
 /* ═══════════════════════════════════════
