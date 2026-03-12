@@ -13,7 +13,7 @@
 }
 
 .page-chapter-badge {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10.5px;
   font-weight: 600;
   color: var(--accent);
@@ -63,7 +63,7 @@
 }
 
 .section-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: var(--text);
@@ -86,7 +86,7 @@
 }
 
 .subsection-title {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -207,7 +207,7 @@
 }
 
 .card-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 9.5px;
   font-weight: 600;
   text-transform: uppercase;
@@ -228,7 +228,7 @@
 }
 
 .card-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: var(--text);
@@ -264,14 +264,11 @@
 
 .example-block.positive,
 .example-block.negative {
-  border-left: 3px solid var(--accent);
-  background: var(--accent-light);
-  border-color: var(--accent-border);
-  border-left-color: var(--accent);
+  border-left: 3px solid var(--border-strong);
 }
 
 .example-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
@@ -280,7 +277,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--accent);
+  color: var(--text-muted);
 }
 
 .example-label-indicator {
@@ -288,7 +285,7 @@
   height: 6px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: var(--accent);
+  background: var(--text-subtle);
 }
 
 
@@ -328,7 +325,7 @@
   flex-shrink: 0;
   background: var(--placeholder-bg);
   border-right: 1px solid var(--border);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px;
   font-weight: 600;
   color: var(--text-subtle);
@@ -349,7 +346,7 @@
 }
 
 .step-title {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 13.5px;
   font-weight: 700;
   color: var(--text);
@@ -397,7 +394,7 @@
 }
 
 .welcome-banner-tag {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 9.5px;
   font-weight: 600;
   color: var(--accent);
@@ -409,7 +406,7 @@
 }
 
 .welcome-banner h2 {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Sora', sans-serif;
   font-size: 26px;
   font-weight: 900;
   color: #ffffff;
@@ -447,7 +444,7 @@
   border: 1px solid var(--border);
   border-radius: 5px;
   padding: 5px 12px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px;
   color: var(--text-muted);
 }
