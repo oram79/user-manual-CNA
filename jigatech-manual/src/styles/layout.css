@@ -1,5 +1,22 @@
+/* ═══════════════════════════════════════
+   LAYOUT — Reset any inherited body styles
+   ═══════════════════════════════════════ */
+body {
+  display: block;
+  place-items: initial;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: block;
+  min-height: 100vh;
+}
+
 .layout {
   display: flex;
+  flex-direction: row;
   min-height: 100vh;
 }
 
@@ -15,6 +32,7 @@
   width: 100%;
   height: 54px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
@@ -25,11 +43,13 @@
   position: sticky;
   top: 0;
   z-index: 20;
+  flex-shrink: 0;
   transition: background var(--transition), border-color var(--transition);
 }
 
 .navbar-left {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 14px;
 }
@@ -59,11 +79,12 @@
 
 .navbar-right {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
 }
 
-/* ─── Mobile Menu Button ─────────────── */
+/* ─── Mobile Menu Button — HIDDEN on desktop ─── */
 .menu-toggle {
   display: none;
   align-items: center;
@@ -85,7 +106,7 @@
   color: var(--text);
 }
 
-/* ─── Sidebar Overlay (mobile) ───────── */
+/* ─── Sidebar Overlay (mobile only) ───── */
 .sidebar-overlay {
   display: none;
 }
@@ -94,6 +115,7 @@
 .content {
   flex: 1;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding: 48px 48px 96px;
 }
@@ -110,7 +132,7 @@
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Tablet
+   RESPONSIVE — Tablet (1024px)
    ═══════════════════════════════════════ */
 @media (max-width: 1024px) {
   .navbar {
@@ -131,24 +153,11 @@
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Mobile
+   RESPONSIVE — Mobile (768px)
    ═══════════════════════════════════════ */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    transform: translateX(-100%);
-    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
   }
 
   .sidebar-overlay {
@@ -183,7 +192,7 @@
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Small phones
+   RESPONSIVE — Small phones (480px)
    ═══════════════════════════════════════ */
 @media (max-width: 480px) {
   .navbar-company {

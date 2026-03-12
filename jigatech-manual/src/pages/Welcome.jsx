@@ -17,43 +17,73 @@ export default function Welcome() {
         <p>This section contains your welcome message and an overview of what to expect in your new role at the service desk.</p>
       </div>
 
+      {/* ============================================
+          SECTION: Welcome Message
+          Add your welcome message content below.
+          ============================================ */}
       <div className="section">
         <h2 className="section-title">Welcome Message</h2>
-        <div className="placeholder placeholder-lg" />
+        <div className="placeholder placeholder-lg">
+          {/* YOUR CONTENT HERE — Welcome message text */}
+        </div>
       </div>
 
+      {/* ============================================
+          SECTION: About Jigatech Solutions
+          Fill in each card with company info.
+          ============================================ */}
       <div className="section">
         <h2 className="section-title">About Jigatech Solutions</h2>
         <div className="card-grid">
           {["Company Overview", "Our Mission", "Company Size & Scope", "Our Client Base"].map((title) => (
             <div className="card" key={title}>
               <div className="card-label"><span className="card-label-dot" />{title}</div>
-              <div className="placeholder placeholder-sm" />
+              <div className="placeholder placeholder-sm">
+                {/* YOUR CONTENT HERE — {title} details */}
+              </div>
             </div>
           ))}
         </div>
       </div>
 
+      {/* ============================================
+          SECTION: The Role of the Help Desk
+          Describe the help desk's purpose and function.
+          ============================================ */}
       <div className="section">
         <h2 className="section-title">The Role of the Help Desk</h2>
-        <div className="placeholder placeholder-lg" />
+        <div className="placeholder placeholder-lg">
+          {/* YOUR CONTENT HERE — Help desk role description */}
+        </div>
       </div>
 
+      {/* ============================================
+          SECTION: Expectations of a Help Desk Analyst
+          Fill in each card with expectation details.
+          ============================================ */}
       <div className="section">
         <h2 className="section-title">Expectations of a Help Desk Analyst</h2>
         <div className="card-grid">
           {["Response Time Standards", "Documentation Quality", "First Call Resolution", "Escalation Protocol"].map((title) => (
             <div className="card" key={title}>
               <div className="card-label"><span className="card-label-dot" />{title}</div>
-              <div className="placeholder placeholder-sm" />
+              <div className="placeholder placeholder-sm">
+                {/* YOUR CONTENT HERE — {title} details */}
+              </div>
             </div>
           ))}
         </div>
       </div>
 
+      {/* ============================================
+          SECTION: Professionalism & Workplace Conduct
+          Add professionalism guidelines here.
+          ============================================ */}
       <div className="section">
         <h2 className="section-title">Professionalism & Workplace Conduct</h2>
-        <div className="placeholder placeholder-lg" />
+        <div className="placeholder placeholder-lg">
+          {/* YOUR CONTENT HERE — Professionalism guidelines */}
+        </div>
       </div>
     </div>
   );

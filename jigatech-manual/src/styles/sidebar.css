@@ -1,3 +1,6 @@
+/* ═══════════════════════════════════════
+   SIDEBAR — Desktop: sticky, Mobile: drawer
+   ═══════════════════════════════════════ */
 .sidebar {
   width: 260px;
   height: 100vh;
@@ -7,6 +10,7 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  overflow-x: hidden;
   overflow-y: auto;
   border-right: 1px solid var(--sidebar-border);
   z-index: 30;
@@ -14,45 +18,61 @@
 
 /* ─── Brand ──────────────────────────── */
 .sidebar-brand {
-  padding: 26px 22px 22px;
+  padding: 22px 20px 20px;
   border-bottom: 1px solid var(--sidebar-border);
   position: relative;
+  flex-shrink: 0;
 }
 
 .sidebar-brand::after {
   content: '';
   position: absolute;
   bottom: -1px;
-  left: 22px;
+  left: 20px;
   width: 36px;
   height: 2px;
   background: var(--accent);
   border-radius: 1px;
 }
 
+.sidebar-brand-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar-brand-name {
-  font-family: 'Outfit', sans-serif;
-  font-size: 19px;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.03em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.15em;
+  line-height: 1.2;
 }
 
 .sidebar-brand-name span {
   color: var(--accent);
+  font-weight: 700;
 }
 
 .sidebar-brand-sub {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9.5px;
+  font-size: 8.5px;
   font-weight: 500;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.18);
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 4px;
+  margin-top: 2px;
+  line-height: 1.4;
 }
 
-/* ─── Close button (mobile only) ─────── */
+/* ─── Close button — HIDDEN on desktop ── */
 .sidebar-close {
   display: none;
   position: absolute;
@@ -85,6 +105,7 @@
   color: rgba(255,255,255,0.18);
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  flex-shrink: 0;
 }
 
 /* ─── Navigation ─────────────────────── */
@@ -93,10 +114,12 @@
   flex-direction: column;
   padding: 4px 10px;
   gap: 2px;
+  flex-shrink: 0;
 }
 
-.sidebar a {
+.sidebar nav a {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   color: var(--sidebar-text);
@@ -107,20 +130,22 @@
   transition: all 0.15s ease;
   line-height: 1.3;
   position: relative;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.sidebar a:hover {
+.sidebar nav a:hover {
   background: rgba(255,255,255,0.04);
   color: var(--sidebar-text-hover);
 }
 
-.sidebar a.active {
+.sidebar nav a.active {
   background: var(--sidebar-active-bg);
   color: var(--sidebar-active-text);
   font-weight: 500;
 }
 
-.sidebar a.active::before {
+.sidebar nav a.active::before {
   content: '';
   position: absolute;
   left: 0;
@@ -136,6 +161,7 @@
 .sidebar-chapter-num {
   width: 24px;
   height: 24px;
+  min-width: 24px;
   border-radius: 6px;
   background: rgba(255,255,255,0.06);
   color: rgba(255,255,255,0.3);
@@ -149,13 +175,13 @@
   transition: all 0.15s;
 }
 
-.sidebar a.active .sidebar-chapter-num {
+.sidebar nav a.active .sidebar-chapter-num {
   background: var(--accent);
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(224,90,26,0.35);
 }
 
-.sidebar a:hover .sidebar-chapter-num {
+.sidebar nav a:hover .sidebar-chapter-num {
   background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.6);
 }
@@ -170,12 +196,27 @@
   color: rgba(255,255,255,0.12);
   line-height: 1.8;
   letter-spacing: 0.03em;
+  flex-shrink: 0;
 }
 
-/* ─── Responsive ─────────────────────── */
+/* ═══════════════════════════════════════
+   RESPONSIVE — Mobile (768px and below)
+   ═══════════════════════════════════════ */
 @media (max-width: 768px) {
   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 280px;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
   }
 
   .sidebar-close {
