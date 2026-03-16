@@ -1,4 +1,4 @@
-export default function ClientExperience() {
+export default function Communication() {
   return (
     <div>
       <div className="page-header">
@@ -6,74 +6,79 @@ export default function ClientExperience() {
           <span className="page-chapter-badge">Chapter 03</span>
           <div className="page-eyebrow-line" />
         </div>
-        <h1>Understanding the Client Experience</h1>
-        <p>Learn who our clients are, why their experience matters, and how to consistently deliver great service.</p>
+        <h1>Communication Skills for IT Support</h1>
+        <p>Effective communication is the foundation of excellent service desk work.</p>
         <hr className="page-header-rule" />
       </div>
 
       {/* ============================================
-          SECTION: Who Are Our Clients?
-          Fill in each card with client type info.
+          SECTION: Active Listening Techniques
+          Describe active listening methods.
           ============================================ */}
       <div className="section">
-        <h2 className="section-title">Who Are Our Clients?</h2>
-        <div className="two-col">
-          <div className="card">
-            <div className="card-label"><span className="card-label-dot" />Internal Users</div>
-            <div className="card-title">Company Employees</div>
-            <div className="placeholder placeholder-sm">
-              {/* YOUR CONTENT HERE — Internal users description */}
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-label"><span className="card-label-dot" />External Users</div>
-            <div className="card-title">Outside Clients</div>
-            <div className="placeholder placeholder-sm">
-              {/* YOUR CONTENT HERE — External users description */}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ============================================
-          SECTION: Why Client Service Matters in IT
-          Explain the importance of client service.
-          ============================================ */}
-      <div className="section">
-        <h2 className="section-title">Why Client Service Matters in IT</h2>
+        <h2 className="section-title">Active Listening Techniques</h2>
         <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Why client service matters */}
+          {/* YOUR CONTENT HERE — Active listening techniques */}
         </div>
       </div>
 
       {/* ============================================
-          SECTION: Managing Client Expectations
-          Tips on expectation management.
+          SECTION: Asking Effective Troubleshooting Questions
+          Add question frameworks and tips.
           ============================================ */}
       <div className="section">
-        <h2 className="section-title">Managing Client Expectations</h2>
+        <h2 className="section-title">Asking Effective Troubleshooting Questions</h2>
         <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Expectation management */}
+          {/* YOUR CONTENT HERE — Troubleshooting question techniques */}
         </div>
       </div>
 
       {/* ============================================
-          SECTION: Perception vs. Satisfaction
-          Explain the difference between the two.
+          SECTION: Explaining Technical Issues to Non-Technical Users
+          Tips for simplifying technical language.
           ============================================ */}
       <div className="section">
-        <h2 className="section-title">Perception vs. Satisfaction</h2>
+        <h2 className="section-title">Explaining Technical Issues to Non-Technical Users</h2>
+        <div className="placeholder placeholder-lg">
+          {/* YOUR CONTENT HERE — Simplifying technical explanations */}
+        </div>
+      </div>
+
+      {/* ============================================
+          SECTION: Telephone Etiquette
+          Fill in each card with phone etiquette tips.
+          ============================================ */}
+      <div className="section">
+        <h2 className="section-title">Telephone Etiquette</h2>
+        <div className="card-grid">
+          {["Answering Calls", "Tone & Pace", "Placing on Hold", "Closing the Call"].map((title) => (
+            <div className="card" key={title}>
+              <div className="card-label"><span className="card-label-dot" />{title}</div>
+              <div className="placeholder placeholder-sm">
+                {/* YOUR CONTENT HERE — {title} guidelines */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ============================================
+          SECTION: Email Etiquette
+          Add email communication standards.
+          ============================================ */}
+      <div className="section">
+        <h2 className="section-title">Email Etiquette</h2>
         <div className="two-col">
           <div className="subsection">
-            <div className="subsection-title">Client Perception</div>
+            <div className="subsection-title">Tone & Structure</div>
             <div className="placeholder">
-              {/* YOUR CONTENT HERE — Client perception explanation */}
+              {/* YOUR CONTENT HERE — Email tone and structure */}
             </div>
           </div>
           <div className="subsection">
-            <div className="subsection-title">Client Satisfaction</div>
+            <div className="subsection-title">Response Time Standards</div>
             <div className="placeholder">
-              {/* YOUR CONTENT HERE — Client satisfaction explanation */}
+              {/* YOUR CONTENT HERE — Email response time standards */}
             </div>
           </div>
         </div>
@@ -81,26 +86,26 @@ export default function ClientExperience() {
 
       {/* ============================================
           SECTION: Interaction Examples
-          Add example scenarios for each block.
+          Add example phone and email interactions.
           ============================================ */}
       <div className="section">
         <h2 className="section-title">Interaction Examples</h2>
         <div className="example-block positive">
           <div className="example-label positive">
             <span className="example-label-indicator" />
-            Positive Interaction
+            Strong Support Phone Interaction
           </div>
           <div className="placeholder">
-            {/* YOUR CONTENT HERE — Positive interaction example */}
+            {/* YOUR CONTENT HERE — Good phone interaction example */}
           </div>
         </div>
-        <div className="example-block negative">
-          <div className="example-label negative">
+        <div className="example-block positive">
+          <div className="example-label positive">
             <span className="example-label-indicator" />
-            Negative Interaction
+            Professional Support Email
           </div>
-          <div className="placeholder">
-            {/* YOUR CONTENT HERE — Negative interaction example */}
+          <div className="placeholder placeholder-lg">
+            {/* YOUR CONTENT HERE — Good email example */}
           </div>
         </div>
       </div>

@@ -14,19 +14,13 @@ export default function Welcome() {
       <div className="welcome-banner">
         <div className="welcome-banner-tag">New Hire Onboarding</div>
         <h2>Welcome to Jigatech Solutions</h2>
-        <p>This section contains your welcome message and an overview of what to expect in your new role at the service desk.</p>
+        <p></p>
       </div>
 
       {/* ============================================
           SECTION: Welcome Message
           Add your welcome message content below.
           ============================================ */}
-      <div className="section">
-        <h2 className="section-title">Welcome Message</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Welcome message text */}
-        </div>
-      </div>
 
       {/* ============================================
           SECTION: About Jigatech Solutions

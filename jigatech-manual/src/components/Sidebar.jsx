@@ -75,9 +75,9 @@ export default function Sidebar({ open, onClose }) {
       </nav>
 
       <div className="sidebar-footer">
-        CR1260<br />
-        Jigatech Solutions<br />
-        Rev. 2026
+        Jigatech Solutions CR1260<br />
+        Rev. 2026<br />
+        Version 1.1.3
       </div>
     </div>
   );
