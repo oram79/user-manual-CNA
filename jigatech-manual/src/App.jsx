@@ -10,6 +10,7 @@ import TicketingSystem from "./pages/TicketingSystem";
 import IncidentHandling from "./pages/IncidentHandling";
 import Teamwork from "./pages/Teamwork";
 import StressManagement from "./pages/StressManagement";
+import WelcomeVideo from "./pages/WelcomeVideo";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/incident-handling" element={<IncidentHandling />} />
           <Route path="/teamwork" element={<Teamwork />} />
           <Route path="/stress-management" element={<StressManagement />} />
+          <Route path="/welcome-video" element={<WelcomeVideo />} />
         </Routes>
       </Layout>
     </BrowserRouter>

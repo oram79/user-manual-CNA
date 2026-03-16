@@ -74,10 +74,25 @@ export default function Sidebar({ open, onClose }) {
         ))}
       </nav>
 
+      <div className="sidebar-section-label">Media</div>
+
+      <nav>
+        <NavLink
+          to="/welcome-video"
+          className={({ isActive }) => (isActive ? "active" : "")}
+          onClick={onClose}
+        >
+          <span className="sidebar-chapter-num">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          </span>
+          Welcome Video
+        </NavLink>
+      </nav>
+
       <div className="sidebar-footer">
-        Jigatech Solutions CR1260<br />
-        Rev. 2026<br />
-        Version 1.1.3
+        CR1260<br />
+        Jigatech Solutions<br />
+        Rev. 2026
       </div>
     </div>
   );
