@@ -19,7 +19,7 @@ export default function Welcome() {
           This manual has been put together to help you get up to speed with how we work, what
           we expect, and how you can succeed in your role. Whether you're brand new to IT support
           or coming in with experience, this guide will walk you through everything you need to
-          know — from handling your first ticket to communicating with clients and working with
+          know from handling your first ticket to communicating with clients and working with
           your team. Take your time going through each chapter, ask questions when you need to,
           and know that your team is here to support you as you settle in..</p>
       </div>
@@ -59,7 +59,7 @@ export default function Welcome() {
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Our Client Base</div>
             <p>
-              We serve a mix of small-to-medium businesses and enterprise clients in sectors
+              We serve a mix of small - medium businesses and enterprise clients in sectors
               including finance, healthcare, education, and retail. Each client has unique needs,
               and we tailor our support approach accordingly.
             </p>
