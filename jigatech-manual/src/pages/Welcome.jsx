@@ -1,15 +1,18 @@
 export default function Welcome() {
   return (
     <div>
+
       <div className="page-header">
         <div className="page-eyebrow">
           <span className="page-chapter-badge">Chapter 01</span>
           <div className="page-eyebrow-line" />
         </div>
+
         {/* Welcome Section */}
         <h1>Welcome & Overview</h1>
         <p>An introduction to Jigatech Solutions and your role as a Service Desk Analyst.</p>
         <hr className="page-header-rule" />
+
       </div>
 
       <div className="welcome-banner">
@@ -21,7 +24,7 @@ export default function Welcome() {
           or coming in with experience, this guide will walk you through everything you need to
           know from handling your first ticket to communicating with clients and working with
           your team. Take your time going through each chapter, ask questions when you need to,
-          and know that your team is here to support you as you settle in..</p>
+          and know that your team is here to support you as you settle in.</p>
       </div>
 
       {/* About Section */}
@@ -74,7 +77,7 @@ export default function Welcome() {
       <div className="section">
         <h2 className="section-title">The Role of the Help Desk</h2>
         <p>
-          
+
         </p>
       </div>
 

@@ -11,77 +11,62 @@ export default function StressManagement() {
         <hr className="page-header-rule" />
       </div>
 
-      {/* ============================================
-          SECTION: Common Stressors in Help Desk Roles
-          List and explain common stressors.
-          ============================================ */}
+      {/* ── Common Stressors in Help Desk Roles ── */}
       <div className="section">
         <h2 className="section-title">Common Stressors in Help Desk Roles</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Common stressors */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Managing High Call or Ticket Volumes
-          Strategies for handling volume spikes.
-          ============================================ */}
+      {/* ── Managing High Call or Ticket Volumes ── */}
       <div className="section">
         <h2 className="section-title">Managing High Call or Ticket Volumes</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Volume management strategies */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: De-escalating Frustrated Clients
-          Techniques for de-escalation.
-          ============================================ */}
+      {/* ── De-escalating Frustrated Clients ── */}
       <div className="section">
         <h2 className="section-title">De-escalating Frustrated Clients</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — De-escalation techniques */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Time Management Strategies
-          Fill in each card with a strategy.
-          ============================================ */}
+      {/* ── Time Management Strategies ── */}
       <div className="section">
         <h2 className="section-title">Time Management Strategies</h2>
         <div className="card-grid">
-          {["Prioritization Frameworks", "Time Blocking", "Task Batching", "Managing Interruptions"].map((title) => (
-            <div className="card" key={title}>
-              <div className="card-label"><span className="card-label-dot" />{title}</div>
-              <div className="placeholder placeholder-sm">
-                {/* YOUR CONTENT HERE — {title} details */}
-              </div>
-            </div>
-          ))}
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Prioritization Frameworks</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Time Blocking</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Task Batching</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Managing Interruptions</div>
+            <p></p>
+          </div>
+
         </div>
       </div>
 
-      {/* ============================================
-          SECTION: Burnout Prevention
-          Add burnout prevention advice.
-          ============================================ */}
+      {/* ── Burnout Prevention ── */}
       <div className="section">
         <h2 className="section-title">Burnout Prevention</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Burnout prevention */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: When & How to Seek Support
-          Resources and guidance for seeking help.
-          ============================================ */}
+      {/* ── When & How to Seek Support ── */}
       <div className="section">
         <h2 className="section-title">When & How to Seek Support</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Seeking support resources */}
-        </div>
+        <p></p>
       </div>
     </div>
   );

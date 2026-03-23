@@ -11,68 +11,41 @@ export default function Teamwork() {
         <hr className="page-header-rule" />
       </div>
 
-      {/* ============================================
-          SECTION: Why Teamwork Matters on a Service Desk
-          Explain the value of teamwork.
-          ============================================ */}
+      {/* ── Why Teamwork Matters on a Service Desk ── */}
       <div className="section">
         <h2 className="section-title">Why Teamwork Matters on a Service Desk</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Why teamwork matters */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Knowledge Sharing & Collaboration
-          Describe collaboration practices.
-          ============================================ */}
+      {/* ── Knowledge Sharing & Collaboration ── */}
       <div className="section">
         <h2 className="section-title">Knowledge Sharing & Collaboration</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Knowledge sharing practices */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: When to Ask for Help
-          Guidelines on seeking assistance.
-          ============================================ */}
+      {/* ── When to Ask for Help ── */}
       <div className="section">
         <h2 className="section-title">When to Ask for Help</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — When to ask for help */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Communicating with Teammates Respectfully
-          Tips for respectful communication.
-          ============================================ */}
+      {/* ── Communicating with Teammates Respectfully ── */}
       <div className="section">
         <h2 className="section-title">Communicating with Teammates Respectfully</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Respectful communication tips */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Shift Handovers & Continuity
-          Fill in both columns with handover info.
-          ============================================ */}
+      {/* ── Shift Handovers & Continuity ── */}
       <div className="section">
         <h2 className="section-title">Shift Handovers & Continuity</h2>
         <div className="two-col">
           <div className="subsection">
             <div className="subsection-title">Handover Best Practices</div>
-            <div className="placeholder">
-              {/* YOUR CONTENT HERE — Handover best practices */}
-            </div>
+            <p></p>
           </div>
           <div className="subsection">
             <div className="subsection-title">Maintaining Continuity</div>
-            <div className="placeholder">
-              {/* YOUR CONTENT HERE — Continuity practices */}
-            </div>
+            <p></p>
           </div>
         </div>
       </div>

@@ -11,86 +11,54 @@ export default function TicketingSystem() {
         <hr className="page-header-rule" />
       </div>
 
-      {/* ============================================
-          SECTION: Purpose of the Ticketing System
-          Explain why a ticketing system is used.
-          ============================================ */}
+      {/* ── Purpose of the Ticketing System ── */}
       <div className="section">
         <h2 className="section-title">Purpose of the Ticketing System</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Ticketing system purpose */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: How Tickets Are Created
-          Fill in each card with creation methods.
-          ============================================ */}
+      {/* ── How Tickets Are Created ── */}
       <div className="section">
         <h2 className="section-title">How Tickets Are Created</h2>
         <div className="card-grid">
-          {["Via Phone", "Via Email", "Via Self-Service Portal"].map((title) => (
-            <div className="card" key={title}>
-              <div className="card-label"><span className="card-label-dot" />{title}</div>
-              <div className="placeholder placeholder-sm">
-                {/* YOUR CONTENT HERE — {title} process */}
-              </div>
-            </div>
-          ))}
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Via Phone</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Via Email</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Via Self-Service Portal</div>
+            <p></p>
+          </div>
+
         </div>
       </div>
 
-      {/* ============================================
-          SECTION: Required Information in Every Ticket
-          List the mandatory fields/info.
-          ============================================ */}
+      {/* ── Required Information in Every Ticket ── */}
       <div className="section">
         <h2 className="section-title">Required Information in Every Ticket</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Required ticket information */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Ticket Prioritization & Categorization
-          Replace placeholder table with real data.
-          ============================================ */}
+      {/* ── Ticket Prioritization & Categorization ── */}
       <div className="section">
         <h2 className="section-title">Ticket Prioritization & Categorization</h2>
-        <div className="placeholder-table">
-          {/* YOUR CONTENT HERE — Replace this placeholder table
-              with a real <table> or populate with priority data.
-              Current structure is just a visual wireframe. */}
-          <div className="placeholder-table-header">
-            {[120, 80, 100, 90].map((w, i) => (
-              <div key={i} className="placeholder-table-header-cell" style={{ width: w }} />
-            ))}
-          </div>
-          {[1,2,3,4].map((i) => (
-            <div className="placeholder-table-row" key={i}>
-              {[80, 120, 100, 90].map((w, j) => (
-                <div key={j} className="placeholder-table-cell" style={{ width: w }} />
-              ))}
-            </div>
-          ))}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Importance of Accurate Documentation
-          Explain why good documentation matters.
-          ============================================ */}
+      {/* ── Importance of Accurate Documentation ── */}
       <div className="section">
         <h2 className="section-title">Importance of Accurate Documentation</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Documentation importance */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Ticket Documentation Examples
-          Add bad vs. good ticket examples.
-          ============================================ */}
+      {/* ── Ticket Documentation Examples ── */}
       <div className="section">
         <h2 className="section-title">Ticket Documentation Examples</h2>
         <div className="example-block negative">
@@ -98,18 +66,14 @@ export default function TicketingSystem() {
             <span className="example-label-indicator" />
             Poorly Documented Ticket
           </div>
-          <div className="placeholder placeholder-lg">
-            {/* YOUR CONTENT HERE — Bad ticket example */}
-          </div>
+          <p></p>
         </div>
         <div className="example-block positive">
           <div className="example-label positive">
             <span className="example-label-indicator" />
             Well-Documented Ticket
           </div>
-          <div className="placeholder placeholder-lg">
-            {/* YOUR CONTENT HERE — Good ticket example */}
-          </div>
+          <p></p>
         </div>
       </div>
     </div>

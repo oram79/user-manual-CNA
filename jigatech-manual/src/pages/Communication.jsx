@@ -11,83 +11,68 @@ export default function Communication() {
         <hr className="page-header-rule" />
       </div>
 
-      {/* ============================================
-          SECTION: Active Listening Techniques
-          Describe active listening methods.
-          ============================================ */}
+      {/* ── Active Listening Techniques ── */}
       <div className="section">
         <h2 className="section-title">Active Listening Techniques</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Active listening techniques */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Asking Effective Troubleshooting Questions
-          Add question frameworks and tips.
-          ============================================ */}
+      {/* ── Asking Effective Troubleshooting Questions ── */}
       <div className="section">
         <h2 className="section-title">Asking Effective Troubleshooting Questions</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Troubleshooting question techniques */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Explaining Technical Issues to Non-Technical Users
-          Tips for simplifying technical language.
-          ============================================ */}
+      {/* ── Explaining Technical Issues to Non-Technical Users ── */}
       <div className="section">
         <h2 className="section-title">Explaining Technical Issues to Non-Technical Users</h2>
-        <div className="placeholder placeholder-lg">
-          {/* YOUR CONTENT HERE — Simplifying technical explanations */}
-        </div>
+        <p></p>
       </div>
 
-      {/* ============================================
-          SECTION: Telephone Etiquette
-          Fill in each card with phone etiquette tips.
-          ============================================ */}
+      {/* ── Telephone Etiquette ── */}
       <div className="section">
         <h2 className="section-title">Telephone Etiquette</h2>
         <div className="card-grid">
-          {["Answering Calls", "Tone & Pace", "Placing on Hold", "Closing the Call"].map((title) => (
-            <div className="card" key={title}>
-              <div className="card-label"><span className="card-label-dot" />{title}</div>
-              <div className="placeholder placeholder-sm">
-                {/* YOUR CONTENT HERE — {title} guidelines */}
-              </div>
-            </div>
-          ))}
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Answering Calls</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Tone & Pace</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Placing on Hold</div>
+            <p></p>
+          </div>
+
+          <div className="card">
+            <div className="card-label"><span className="card-label-dot" />Closing the Call</div>
+            <p></p>
+          </div>
+
         </div>
       </div>
 
-      {/* ============================================
-          SECTION: Email Etiquette
-          Add email communication standards.
-          ============================================ */}
+      {/* ── Email Etiquette ── */}
       <div className="section">
         <h2 className="section-title">Email Etiquette</h2>
         <div className="two-col">
           <div className="subsection">
             <div className="subsection-title">Tone & Structure</div>
-            <div className="placeholder">
-              {/* YOUR CONTENT HERE — Email tone and structure */}
-            </div>
+            <p></p>
           </div>
           <div className="subsection">
             <div className="subsection-title">Response Time Standards</div>
-            <div className="placeholder">
-              {/* YOUR CONTENT HERE — Email response time standards */}
-            </div>
+            <p></p>
           </div>
         </div>
       </div>
 
-      {/* ============================================
-          SECTION: Interaction Examples
-          Add example phone and email interactions.
-          ============================================ */}
+      {/* ── Interaction Examples ── */}
       <div className="section">
         <h2 className="section-title">Interaction Examples</h2>
         <div className="example-block positive">
@@ -95,18 +80,14 @@ export default function Communication() {
             <span className="example-label-indicator" />
             Strong Support Phone Interaction
           </div>
-          <div className="placeholder">
-            {/* YOUR CONTENT HERE — Good phone interaction example */}
-          </div>
+          <p></p>
         </div>
         <div className="example-block positive">
           <div className="example-label positive">
             <span className="example-label-indicator" />
             Professional Support Email
           </div>
-          <div className="placeholder placeholder-lg">
-            {/* YOUR CONTENT HERE — Good email example */}
-          </div>
+          <p></p>
         </div>
       </div>
     </div>

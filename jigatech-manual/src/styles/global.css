@@ -8,10 +8,10 @@
   --text-muted: #8a8991;
   --text-subtle: #58575f;
   --sidebar-bg: #0a0a0d;
-  --sidebar-text: #6e7185;
+  --sidebar-text: #c9cad5;
   --sidebar-text-hover: #c8ccdf;
   --sidebar-active-text: #ffffff;
-  --sidebar-active-bg: rgba(255,255,255,0.07);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.199);
   --sidebar-border: rgba(255,255,255,0.06);
   --navbar-bg: rgba(16,17,20,0.88);
   --card-bg: #1a1b22;
