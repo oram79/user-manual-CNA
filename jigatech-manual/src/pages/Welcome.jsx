@@ -77,7 +77,13 @@ export default function Welcome() {
       <div className="section">
         <h2 className="section-title">The Role of the Help Desk</h2>
         <p>
-
+          The service desk is the central point of contact between Jigatech Solutions and its clients.
+          When a user has a technical issue, a question, or needs access to a system, the service desk
+          is where they turn first. Think of it as the front door of IT support. Our team handles everything
+          from password resets and software installations to network connectivity problems and hardware
+          failures. Beyond fixing issues, the help desk plays a key role in logging and tracking problems,
+          identifying recurring issues, and making sure the right teams are involved when something needs to
+          be escalated. A well-run service desk keeps the entire organization productive.
         </p>
       </div>
 
@@ -88,22 +94,41 @@ export default function Welcome() {
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Response Time Standards</div>
-            <p></p>
+            <p>
+              All incoming tickets should be acknowledged within 15 minutes during business hours.
+              Phone calls should be answered within three rings. Even if you cannot resolve an issue right
+              away, a quick response lets the client know their request has been received and is being worked on.
+              Meeting response time targets is one of the most visible indicators of service quality.
+            </p>
           </div>
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Documentation Quality</div>
-            <p></p>
+            <p>
+              Every interaction should be documented clearly in the ticketing system. Good documentation means another
+              analyst can pick up where you left off without needing to contact the client again. Include what the client
+              reported, what steps you took, and what the outcome was. Avoid vague entries like "fixed issue" be specific
+              about what was done and why.
+            </p>
           </div>
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />First Call Resolution</div>
-            <p></p>
+            <p>
+              Whenever possible, aim to resolve issues during the first interaction. This reduces follow-up work, improves
+              client satisfaction, and keeps ticket volumes manageable. Not every issue can be solved immediately, but building
+              your troubleshooting skills and using the knowledge base will help you resolve more issues on the spot over time.
+            </p>
           </div>
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Escalation Protocol</div>
-            <p></p>
+            <p>
+              When an issue is beyond your skill level or access, escalate it promptly using the correct process. Escalation is not
+              a failure it is a normal part of service desk work. Make sure the ticket is fully documented before passing it on, and
+              always inform the client that their issue is being transferred to a specialist. Never let a ticket sit unresolved without
+              action.
+            </p>
           </div>
 
         </div>
@@ -113,7 +138,12 @@ export default function Welcome() {
       <div className="section">
         <h2 className="section-title">Professionalism & Workplace Conduct</h2>
         <p>
-          
+          As a service desk analyst, you represent Jigatech Solutions in every interaction. Professionalism means being punctual, prepared,
+          and respectful in all communications whether with clients, teammates, or management. Dress appropriately for your work environment,
+          keep your workspace organized, and maintain a positive attitude even during busy or stressful periods. Avoid using slang or overly
+          casual language with clients, and never discuss confidential client information outside of work. If you make a mistake, own it and
+          correct it. Treat every person you interact with the way you would want to be treated when asking for help. Consistency in your
+          professionalism builds trust and credibility over time.
         </p>
       </div>
     </div>

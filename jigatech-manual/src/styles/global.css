@@ -4,11 +4,11 @@
 :root {
   --bg: #101114;
   --bg-subtle: #17181e;
-  --text: #e2e1db;
+  --text: #e0dfd8cc;
   --text-muted: #8a8991;
   --text-subtle: #58575f;
   --sidebar-bg: #0a0a0d;
-  --sidebar-text: #c9cad5;
+  --sidebar-text: #a1a2ac;
   --sidebar-text-hover: #c8ccdf;
   --sidebar-active-text: #ffffff;
   --sidebar-active-bg: rgba(255, 255, 255, 0.199);
