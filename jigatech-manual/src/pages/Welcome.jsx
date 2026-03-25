@@ -18,13 +18,11 @@ export default function Welcome() {
       <div className="welcome-banner">
         <div className="welcome-banner-tag">New Hire Onboarding</div>
         <h2>Welcome to Jigatech Solutions</h2>
-        <p>Welcome to the Jigatech Solutions Service Desk team. We're glad to have you on board.
-          This manual has been put together to help you get up to speed with how we work, what
-          we expect, and how you can succeed in your role. Whether you're brand new to IT support
-          or coming in with experience, this guide will walk you through everything you need to
-          know from handling your first ticket to communicating with clients and working with
-          your team. Take your time going through each chapter, ask questions when you need to,
-          and know that your team is here to support you as you settle in.</p>
+        <p>The service desk is the central point of contact between Jigatech Solutions and its clients.
+          When someone has a technical issue, needs access to a system, or has a question, the service
+          desk is where they turn first. Our team handles everything from password resets and software
+          installs to network issues and hardware failures. Beyond fixing problems, we log and track
+          issues, identify patterns, and escalate to the right teams when needed.</p>
       </div>
 
       {/* About Section */}
