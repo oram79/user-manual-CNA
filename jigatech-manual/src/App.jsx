@@ -10,16 +10,6 @@ import IncidentHandling from "./pages/IncidentHandling";
 import Teamwork from "./pages/Teamwork";
 import StressManagement from "./pages/StressManagement";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -37,4 +27,14 @@ export default function App() {
       </Layout>
     </BrowserRouter>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }

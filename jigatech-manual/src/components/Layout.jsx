@@ -10,7 +10,6 @@ export default function Layout({ children }) {
 
   return (
     <div className="layout">
-      {/* Overlay for mobile */}
       <div
         className={`sidebar-overlay ${sidebarOpen ? "visible" : ""}`}
         onClick={() => setSidebarOpen(false)}
