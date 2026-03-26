@@ -18,11 +18,11 @@ export default function Welcome() {
       <div className="welcome-banner">
         <div className="welcome-banner-tag">New Hire Onboarding</div>
         <h2>Welcome to Jigatech Solutions</h2>
-        <p>The service desk is the central point of contact between Jigatech Solutions and its clients.
-          When someone has a technical issue, needs access to a system, or has a question, the service
-          desk is where they turn first. Our team handles everything from password resets and software
-          installs to network issues and hardware failures. Beyond fixing problems, we log and track
-          issues, identify patterns, and escalate to the right teams when needed.</p>
+        <p>Welcome to the Jigatech Solutions Service Desk team. This manual is designed to help you get up
+          to speed with how we work, what we expect, and how you can succeed in your role. Each chapter
+          covers a key part of the job from handling tickets and communicating with clients to working
+          with your team and managing stress. 
+        </p>
       </div>
 
       {/* About Section */}
@@ -43,7 +43,7 @@ export default function Welcome() {
             <div className="card-label"><span className="card-label-dot" />Our Mission</div>
             <p>
               To provide reliable, responsive, and professional IT support that keeps our clients
-              productive. We aim to resolve issues quickly, communicate clearly, and build lasting
+              happy. We aim to resolve issues quickly, communicate clearly, and build lasting
               trust with every interaction.
             </p>
           </div>
@@ -69,19 +69,13 @@ export default function Welcome() {
         </div>
       </div>
 
-
-
       {/* The Role of the Help Desk */}
       <div className="section">
         <h2 className="section-title">The Role of the Help Desk</h2>
         <p>
-          The service desk is the central point of contact between Jigatech Solutions and its clients.
-          When a user has a technical issue, a question, or needs access to a system, the service desk
-          is where they turn first. Think of it as the front door of IT support. Our team handles everything
-          from password resets and software installations to network connectivity problems and hardware
-          failures. Beyond fixing issues, the help desk plays a key role in logging and tracking problems,
-          identifying recurring issues, and making sure the right teams are involved when something needs to
-          be escalated. A well-run service desk keeps the entire organization productive.
+          The service desk is the first point of contact for anyone experiencing a technical issue,
+          needing system access, or having a question. We handle everything from password resets to hardware
+          failures. We also log and track problems, spot patterns, and escalate to the right teams when needed.
         </p>
       </div>
 
@@ -93,39 +87,33 @@ export default function Welcome() {
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Response Time Standards</div>
             <p>
-              All incoming tickets should be acknowledged within 15 minutes during business hours.
-              Phone calls should be answered within three rings. Even if you cannot resolve an issue right
-              away, a quick response lets the client know their request has been received and is being worked on.
-              Meeting response time targets is one of the most visible indicators of service quality.
+              Acknowledge all tickets within 15 minutes during business hours. Answer calls within three rings.
+              Even if you cannot fix something right away, a quick response shows the client their request is being
+              handled.
             </p>
           </div>
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Documentation Quality</div>
             <p>
-              Every interaction should be documented clearly in the ticketing system. Good documentation means another
-              analyst can pick up where you left off without needing to contact the client again. Include what the client
-              reported, what steps you took, and what the outcome was. Avoid vague entries like "fixed issue" be specific
-              about what was done and why.
+              Document every interaction clearly in the ticketing system. Include what the client reported, what you did, 
+              and the outcome. Be specific avoid basic notes like "fixed issue" so another analyst can pick up where you left off.
             </p>
           </div>
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />First Call Resolution</div>
             <p>
-              Whenever possible, aim to resolve issues during the first interaction. This reduces follow-up work, improves
-              client satisfaction, and keeps ticket volumes manageable. Not every issue can be solved immediately, but building
-              your troubleshooting skills and using the knowledge base will help you resolve more issues on the spot over time.
+              Aim to resolve issues during the first interaction whenever possible. Not every problem can be solved on the spot, but
+              using the knowledge base and building your skills will help you get there over time.
             </p>
           </div>
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Escalation Protocol</div>
             <p>
-              When an issue is beyond your skill level or access, escalate it promptly using the correct process. Escalation is not
-              a failure it is a normal part of service desk work. Make sure the ticket is fully documented before passing it on, and
-              always inform the client that their issue is being transferred to a specialist. Never let a ticket sit unresolved without
-              action.
+              When an issue is beyond your skill level or access, escalate it promptly. Make sure the ticket is documented before passing
+              it on and let the client know their issue is going to a specialist. Escalation is a normal part of the job, not a failure.
             </p>
           </div>
 
