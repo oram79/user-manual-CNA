@@ -5,6 +5,29 @@
   margin-bottom: 52px;
 }
 
+.page-header h1 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+  line-height: 1.15;
+}
+
+.page-header p {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+.page-header-rule {
+  margin-top: 32px;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* ─── Eyebrow ────────────────────────── */
 .page-eyebrow {
   display: flex;
   align-items: center;
@@ -32,29 +55,6 @@
   max-width: 80px;
 }
 
-.page-header h1 {
-  font-size: 36px;
-  font-weight: 900;
-  color: var(--text);
-  letter-spacing: -0.03em;
-  margin-bottom: 12px;
-  line-height: 1.15;
-}
-
-.page-header p {
-  font-size: 15px;
-  color: var(--text-muted);
-  max-width: 540px;
-  line-height: 1.7;
-}
-
-.page-header-rule {
-  margin-top: 32px;
-  border: none;
-  border-top: 1px solid var(--border);
-}
-
-
 /* ═══════════════════════════════════════
    SECTIONS
    ═══════════════════════════════════════ */
@@ -66,12 +66,6 @@
   font-size: 15px;
   color: var(--text-muted);
   line-height: 1.8;
-}
-
-.card > p {
-  font-size: 13.5px;
-  color: var(--text-muted);
-  line-height: 1.7;
 }
 
 .section-title {
@@ -93,6 +87,7 @@
   background: var(--border);
 }
 
+/* ─── Subsections ────────────────────── */
 .subsection {
   margin-bottom: 22px;
 }
@@ -107,74 +102,6 @@
   margin-bottom: 12px;
   padding-left: 1px;
 }
-
-
-/* ═══════════════════════════════════════
-   PLACEHOLDERS
-   ═══════════════════════════════════════ */
-.placeholder {
-  background: var(--placeholder-bg);
-  border: 1.5px dashed var(--placeholder-border);
-  border-radius: var(--radius-sm);
-  min-height: 88px;
-  position: relative;
-  transition: background var(--transition), border-color var(--transition);
-}
-
-
-
-.placeholder-sm { min-height: 56px; }
-.placeholder-lg { min-height: 140px; }
-
-/* ─── Placeholder Table ──────────────── */
-.placeholder-table {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-xs);
-}
-
-.placeholder-table-header {
-  height: 40px;
-  background: var(--placeholder-bg);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  padding: 0 18px;
-  gap: 18px;
-}
-
-.placeholder-table-header-cell {
-  height: 8px;
-  border-radius: 4px;
-  background: var(--placeholder-border);
-}
-
-.placeholder-table-row {
-  height: 46px;
-  display: flex;
-  align-items: center;
-  padding: 0 18px;
-  gap: 18px;
-  border-bottom: 1px solid var(--border);
-  transition: background var(--transition);
-}
-
-.placeholder-table-row:last-child {
-  border-bottom: none;
-}
-
-.placeholder-table-row:nth-child(even) {
-  background: var(--placeholder-bg);
-}
-
-.placeholder-table-cell {
-  height: 8px;
-  border-radius: 4px;
-  background: var(--placeholder-border);
-  opacity: 0.45;
-}
-
 
 /* ═══════════════════════════════════════
    CARDS
@@ -218,6 +145,12 @@
   opacity: 1;
 }
 
+.card > p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
 .card-label {
   font-family: 'Fira Code', monospace;
   font-size: 9.5px;
@@ -248,16 +181,69 @@
   letter-spacing: -0.01em;
 }
 
-
 /* ═══════════════════════════════════════
-   TWO COLUMN LAYOUT
+   WELCOME BANNER
    ═══════════════════════════════════════ */
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+.welcome-banner {
+  background: var(--sidebar-bg);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  margin-bottom: 52px;
+  position: relative;
+  overflow: hidden;
 }
 
+.welcome-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #f59e42, transparent);
+}
+
+.welcome-banner::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(224, 90, 26, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.welcome-banner-tag {
+  font-family: 'Fira Code', monospace;
+  font-size: 9.5px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-banner h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-banner p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  max-width: 460px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
 
 /* ═══════════════════════════════════════
    EXAMPLE BLOCKS
@@ -299,7 +285,6 @@
   flex-shrink: 0;
   background: var(--text-subtle);
 }
-
 
 /* ═══════════════════════════════════════
    WORKFLOW STEPS
@@ -372,71 +357,78 @@
   height: 48px;
 }
 
+/* ═══════════════════════════════════════
+   PLACEHOLDERS
+   ═══════════════════════════════════════ */
+.placeholder {
+  background: var(--placeholder-bg);
+  border: 1.5px dashed var(--placeholder-border);
+  border-radius: var(--radius-sm);
+  min-height: 88px;
+  position: relative;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.placeholder-sm { min-height: 56px; }
+.placeholder-lg { min-height: 140px; }
+
+/* ─── Placeholder Table ──────────────── */
+.placeholder-table {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+}
+
+.placeholder-table-header {
+  height: 40px;
+  background: var(--placeholder-bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  gap: 18px;
+}
+
+.placeholder-table-header-cell {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--placeholder-border);
+}
+
+.placeholder-table-row {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  gap: 18px;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+
+.placeholder-table-row:last-child {
+  border-bottom: none;
+}
+
+.placeholder-table-row:nth-child(even) {
+  background: var(--placeholder-bg);
+}
+
+.placeholder-table-cell {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--placeholder-border);
+  opacity: 0.45;
+}
 
 /* ═══════════════════════════════════════
-   WELCOME BANNER
+   TWO COLUMN LAYOUT
    ═══════════════════════════════════════ */
-.welcome-banner {
-  background: var(--sidebar-bg);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: var(--radius-lg);
-  padding: 36px 40px;
-  margin-bottom: 52px;
-  position: relative;
-  overflow: hidden;
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
-
-.welcome-banner::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent), #f59e42, transparent);
-}
-
-.welcome-banner::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(224,90,26,0.08) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.welcome-banner-tag {
-  font-family: 'Fira Code', monospace;
-  font-size: 9.5px;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-  position: relative;
-  z-index: 1;
-}
-
-.welcome-banner h2 {
-  font-family: 'Sora', sans-serif;
-  font-size: 26px;
-  font-weight: 900;
-  color: #ffffff;
-  letter-spacing: -0.03em;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
-}
-
-.welcome-banner p {
-  color: rgba(255,255,255,0.4);
-  font-size: 14px;
-  max-width: 460px;
-  line-height: 1.7;
-  position: relative;
-  z-index: 1;
-}
-
 
 /* ═══════════════════════════════════════
    INFO ROW / TAGS
@@ -468,9 +460,8 @@
   background: var(--accent);
 }
 
-
 /* ═══════════════════════════════════════
-   RESPONSIVE — Tablet
+   RESPONSIVE — Tablet (max-width: 1024px)
    ═══════════════════════════════════════ */
 @media (max-width: 1024px) {
   .page-header h1 {
@@ -484,7 +475,7 @@
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Mobile
+   RESPONSIVE — Mobile (max-width: 768px)
    ═══════════════════════════════════════ */
 @media (max-width: 768px) {
   .page-header h1 {
@@ -542,7 +533,7 @@
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Small phones
+   RESPONSIVE — Small phones (max-width: 480px)
    ═══════════════════════════════════════ */
 @media (max-width: 480px) {
   .page-header h1 {

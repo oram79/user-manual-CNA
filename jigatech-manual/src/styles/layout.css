@@ -1,6 +1,3 @@
-/* ═══════════════════════════════════════
-   LAYOUT — Reset any inherited body styles
-   ═══════════════════════════════════════ */
 body {
   display: block;
   place-items: initial;
@@ -14,6 +11,9 @@ body {
   min-height: 100vh;
 }
 
+/* ═══════════════════════════════════════
+   LAYOUT
+   ═══════════════════════════════════════ */
 .layout {
   display: flex;
   flex-direction: row;
@@ -27,7 +27,9 @@ body {
   min-width: 0;
 }
 
-/* ─── Navbar ─────────────────────────── */
+/* ═══════════════════════════════════════
+   NAVBAR
+   ═══════════════════════════════════════ */
 .navbar {
   width: 100%;
   height: 58px;
@@ -43,7 +45,7 @@ body {
   z-index: 20;
   flex-shrink: 0;
   transition: background var(--transition), border-color var(--transition);
-  box-shadow: 0 1px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-left {
@@ -51,6 +53,13 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 14px;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .navbar-divider {
@@ -75,14 +84,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.navbar-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-/* ─── Mobile Menu Button — HIDDEN on desktop ─── */
+/* ═══════════════════════════════════════
+   MOBILE MENU TOGGLE
+   ═══════════════════════════════════════ */
 .menu-toggle {
   display: none;
   align-items: center;
@@ -104,12 +108,16 @@ body {
   color: var(--text);
 }
 
-/* ─── Sidebar Overlay (mobile only) ───── */
+/* ═══════════════════════════════════════
+   SIDEBAR OVERLAY (mobile only)
+   ═══════════════════════════════════════ */
 .sidebar-overlay {
   display: none;
 }
 
-/* ─── Content Area ───────────────────── */
+/* ═══════════════════════════════════════
+   CONTENT AREA
+   ═══════════════════════════════════════ */
 .content {
   flex: 1;
   display: flex;
@@ -124,13 +132,16 @@ body {
   animation: pageIn 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+/* ═══════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════ */
 @keyframes pageIn {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Tablet (1024px)
+   RESPONSIVE — Tablet (max-width: 1024px)
    ═══════════════════════════════════════ */
 @media (max-width: 1024px) {
   .navbar {
@@ -151,7 +162,7 @@ body {
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Mobile (768px)
+   RESPONSIVE — Mobile (max-width: 768px)
    ═══════════════════════════════════════ */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -162,7 +173,7 @@ body {
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     z-index: 99;
     opacity: 0;
@@ -190,7 +201,7 @@ body {
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — Small phones (480px)
+   RESPONSIVE — Small phones (max-width: 480px)
    ═══════════════════════════════════════ */
 @media (max-width: 480px) {
   .navbar-company {
