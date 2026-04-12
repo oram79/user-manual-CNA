@@ -123,7 +123,7 @@ export default function Communication() {
           </div>
           <p>
             "Hi Sarah, thank you for reaching out. I have looked into the login issue you reported and have reset your account credentials. You should
-            be able to log in now using your usual email — you will be prompted to set a new password on your first login. Let me know if you run into
+            be able to log in now using your usual email you will be prompted to set a new password on your first login. Let me know if you run into
             any trouble. Best regards, [Analyst Name]"
           </p>
         </div>

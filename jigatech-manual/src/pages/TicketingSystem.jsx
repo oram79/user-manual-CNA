@@ -76,13 +76,13 @@ export default function TicketingSystem() {
       <div className="section">
         <h2 className="section-title">Importance of Accurate Documentation</h2>
         <p>
-          Consistency: Any technician can pick up where another left off without asking the user to repeat themselves.
-          <br></br>
-          Knowledge Base: Past tickets become the "search engine" for future problems.
-          <br></br>
-          Legal/Compliance: It provides a paper trail for security audits and billing.
-          <br></br>
-          Data-Driven Decisions: Helps management see which equipment is failing most often.
+          <strong>Consistency:</strong> Any technician can pick up where another left off without asking the user to repeat themselves.
+          <br></br><br></br>
+          <strong>Knowledge Base:</strong> Past tickets become the "search engine" for future problems.
+          <br></br><br></br>
+          <strong>Legal/Compliance:</strong> It provides a paper trail for security audits and billing.
+          <br></br><br></br>
+          <strong>Data-Driven Decisions:</strong> Helps management see which equipment is failing most often.
         </p>
       </div>
 
