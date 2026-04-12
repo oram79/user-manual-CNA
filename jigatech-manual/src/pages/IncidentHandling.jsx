@@ -1,3 +1,5 @@
+import slaImage from '../images/SLAAgreement.jpeg';
+
 export default function IncidentHandling() {
   return (
     <div>
@@ -127,13 +129,7 @@ export default function IncidentHandling() {
         </div>
         <div className="subsection">
           <div className="subsection-title">Sample SLA Reference Table</div>
-          <p>
-            P1 = 15m Response/4h Fix;
-            <br></br>
-            P2 = 1h Response/8h Fix;
-            <br></br>
-            P3 = 4h Response/24h Fix.
-          </p>
+          <img src={slaImage} alt="SLA Reference Table" style={{ maxWidth: '50%', display: 'block', borderRadius: '8px', filter: 'brightness(0.75) contrast(0.9)' }} />
         </div>
       </div>
     </div>
