@@ -18,12 +18,21 @@ export default function IncidentHandling() {
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Definition</div>
             <div className="card-title">Incident</div>
-            <p></p>
+            <p>
+              An incident is an unplanned disruption to a service or a reduction in quality.
+              Examples include a server going down, a user losing network access, or software
+              crashing unexpectedly. Incidents need to be resolved as quickly as possible to
+              restore normal operations.
+            </p>
           </div>
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Definition</div>
             <div className="card-title">Service Request</div>
-            <p></p>
+            <p>
+              A service request is a planned ask from a user things like setting up a new account,
+              installing software, or requesting access to a shared drive. These follow a standard
+              process and are usually lower urgency than incidents.
+            </p>
           </div>
         </div>
       </div>
@@ -37,7 +46,10 @@ export default function IncidentHandling() {
             <div className="step-index">01</div>
             <div className="step-body">
               <div className="step-title">Identify & Log</div>
-              <p></p>
+              <p>
+                Confirm the issue and create a ticket immediately. Record what the user reported, when
+                it started, and who is affected. The sooner it is logged, the sooner it can be tracked and worked on.
+              </p>
             </div>
           </div>
 
@@ -45,7 +57,10 @@ export default function IncidentHandling() {
             <div className="step-index">02</div>
             <div className="step-body">
               <div className="step-title">Categorize & Prioritize</div>
-              <p></p>
+              <p>
+                Assign the correct category (hardware, software, network, etc.) and set the priority based on urgency
+                and impact. A company email outage ranks higher than a single user's printer jam.
+              </p>
             </div>
           </div>
 
@@ -53,7 +68,10 @@ export default function IncidentHandling() {
             <div className="step-index">03</div>
             <div className="step-body">
               <div className="step-title">Investigate & Diagnose</div>
-              <p></p>
+              <p>
+                Gather more information, check the knowledge base for known fixes, and begin troubleshooting.
+                Ask targeted questions and document what you try along the way.
+              </p>
             </div>
           </div>
 
@@ -61,7 +79,10 @@ export default function IncidentHandling() {
             <div className="step-index">04</div>
             <div className="step-body">
               <div className="step-title">Resolve & Recover</div>
-              <p></p>
+              <p>
+                Apply the fix and confirm the service is restored. Test with the client to make sure things
+                are working as expected before considering the issue resolved.
+              </p>
             </div>
           </div>
 
@@ -69,7 +90,10 @@ export default function IncidentHandling() {
             <div className="step-index">05</div>
             <div className="step-body">
               <div className="step-title">Close & Document</div>
-              <p></p>
+              <p>
+                Update the ticket with a clear summary of what caused the issue, what was done to fix it, and
+                any follow-up needed. Then close the ticket. Good closure notes help with future troubleshooting.
+              </p>
             </div>
           </div>
 
@@ -97,12 +121,18 @@ export default function IncidentHandling() {
         <h2 className="section-title">Introduction to SLAs</h2>
         <div className="subsection">
           <div className="subsection-title">What is a Service Level Agreement?</div>
-          <p>A contract defining the expected response and resolution times for IT support.</p>
+          <p>
+            A contract defining the expected response and resolution times for IT support.
+          </p>
         </div>
         <div className="subsection">
           <div className="subsection-title">Sample SLA Reference Table</div>
           <p>
-            P1 = 15m Response/4h Fix; P2 = 1h Response/8h Fix; P3 = 4h Response/24h Fix.
+            P1 = 15m Response/4h Fix;
+            <br></br>
+            P2 = 1h Response/8h Fix;
+            <br></br>
+            P3 = 4h Response/24h Fix.
           </p>
         </div>
       </div>
