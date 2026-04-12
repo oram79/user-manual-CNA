@@ -79,13 +79,17 @@ export default function IncidentHandling() {
       {/* ── Escalation Procedures ── */}
       <div className="section">
         <h2 className="section-title">Escalation Procedures</h2>
-        <p></p>
+        <p>Moving a ticket to a Tier 2 or Tier 3 when the solution requires specialiazed
+          permissions or the SLA is about to expire.
+        </p>
       </div>
 
       {/* ── When & How to Involve Senior Staff ── */}
       <div className="section">
         <h2 className="section-title">When & How to Involve Senior Staff</h2>
-        <p></p>
+        <p>Involve seniors for P1 (Total outtage) events or when a standard fix fails to
+          resolve a high- priorty user's issue
+        </p>
       </div>
 
       {/* ── Introduction to SLAs ── */}
@@ -93,11 +97,13 @@ export default function IncidentHandling() {
         <h2 className="section-title">Introduction to SLAs</h2>
         <div className="subsection">
           <div className="subsection-title">What is a Service Level Agreement?</div>
-          <p></p>
+          <p>A contract defining the expected response and resolution times for IT support.</p>
         </div>
         <div className="subsection">
           <div className="subsection-title">Sample SLA Reference Table</div>
-          <p></p>
+          <p>
+            P1 = 15m Response/4h Fix; P2 = 1h Response/8h Fix; P3 = 4h Response/24h Fix.
+          </p>
         </div>
       </div>
     </div>

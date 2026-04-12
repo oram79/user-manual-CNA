@@ -14,7 +14,11 @@ export default function TicketingSystem() {
       {/* ── Purpose of the Ticketing System ── */}
       <div className="section">
         <h2 className="section-title">Purpose of the Ticketing System</h2>
-        <p></p>
+        <p>
+          Purpose of a Ticketing System: It acts as the "system of record" for all IT support 
+          activities. It ensures no issue is forgotten, tracks technician productivity, and 
+          provides a history of fixes for future reference.
+        </p>
       </div>
 
       {/* ── How Tickets Are Created ── */}
@@ -24,7 +28,8 @@ export default function TicketingSystem() {
 
           <div className="card">
             <div className="card-label"><span className="card-label-dot" />Via Phone</div>
-            <p></p>
+            <p>
+            </p>
           </div>
 
           <div className="card">
@@ -43,13 +48,20 @@ export default function TicketingSystem() {
       {/* ── Required Information in Every Ticket ── */}
       <div className="section">
         <h2 className="section-title">Required Information in Every Ticket</h2>
-        <p></p>
+        <p> Every ticket must contain the client's name, contact info. a descriptive subject line, the prioirty level,
+            and a detailed description of the issue
+        </p>
       </div>
 
       {/* ── Ticket Prioritization & Categorization ── */}
       <div className="section">
         <h2 className="section-title">Ticket Prioritization & Categorization</h2>
-        <p></p>
+        <p>
+            P1 (Critical): Entire office down <br></br>
+            P2 (High): Executivd user unable to work <br></br>
+            P3 (Medium): Standard issue, work continues <br></br>
+            P4 (Low): General inquiry or non-urgent request<br></br>
+        </p>
       </div>
 
       {/* ── Importance of Accurate Documentation ── */}
