@@ -38,14 +38,17 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  background: var(--sidebar-bg);
+  background: var(--navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  border-bottom-color: color-mix(in srgb, var(--accent) 18%, var(--border) 82%);
   position: sticky;
   top: 0;
   z-index: 20;
   flex-shrink: 0;
   transition: background var(--transition), border-color var(--transition);
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
 
 .navbar-left {
@@ -68,11 +71,26 @@ body {
   background: var(--border-strong);
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-accent-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(224, 90, 26, 0.55);
+}
+
 .navbar-company {
   font-family: 'Sora', sans-serif;
   font-size: 14.5px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--accent);
   letter-spacing: -0.01em;
 }
 

@@ -7,7 +7,10 @@ export default function Navbar({ onMenuToggle }) {
         <button className="menu-toggle" onClick={onMenuToggle} aria-label="Open menu">
           <MenuIcon />
         </button>
-        <span className="navbar-company">Jigatech Solutions</span>
+        <div className="navbar-brand">
+          <span className="navbar-accent-dot" />
+          <span className="navbar-company">Jigatech Solutions</span>
+        </div>
         <div className="navbar-divider" />
         <span className="navbar-doc-title">Service Desk Training Manual</span>
       </div>
